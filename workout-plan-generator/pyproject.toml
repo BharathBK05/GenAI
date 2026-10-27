@@ -1,0 +1,20 @@
+[project]
+name = "workout-plan-generator"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Bharath Kumar", email = "kbharath840@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+workout-plan-generator = "workout_plan_generator:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
